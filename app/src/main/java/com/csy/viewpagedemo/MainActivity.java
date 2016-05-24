@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this,LinkPageActivity.class);
             startActivity(intent);
         }
+        Log.e("123", "nihao");
     }
     public Boolean isGuide(){
         SharedPreferences sp = MainActivity.this.getSharedPreferences("guide_flag",MODE_PRIVATE);
